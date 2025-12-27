@@ -393,7 +393,7 @@ footer .dark {
         display: block;
         justify-self: center;
         position: absolute;
-        top: 5px;
+        top: 15px;
 
         p {
             border-style: solid;
