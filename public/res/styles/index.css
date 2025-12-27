@@ -1,0 +1,501 @@
+body {
+    margin: 0px;
+    background-color: rgb(43, 44, 80);
+}
+
+/* Theme classes */
+.light {
+    color: black;
+    background-color: bisque;
+}
+
+.dark {
+    color: white;
+    background-color: rgb(43, 44, 80);
+}
+
+/* Navigation section styling */
+nav .light {
+    background-color: rgb(43, 44, 80);
+    color: white;
+
+    .bar {
+        background-color: white;
+    }
+}
+
+nav .dark {
+    background-color: bisque;
+    color: black;
+
+    .bar {
+        background-color: black;
+    }
+}
+
+.nav .butn:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+
+    .elem {
+
+        width: fit-content;
+
+        a {
+            margin: 0px;
+            font-size: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.4s;
+            padding: 10px;
+
+            span {
+                margin-right: 5px;
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        .bar {
+            margin-left: 20px;
+            display: block;
+            border-radius: 20px;
+            width: 0px;
+            height: 4px;
+            /* background-color: black; */
+            transition: width 0.2s;
+        }
+    }
+
+    .butn {
+        width: fit-content;
+        border-style: solid;
+        border-width: 4px;
+        border-color: transparent;
+        transition: box-shadow 0.4s, border 0.4s;
+
+        p {
+            display: inline;
+            margin: 0px;
+            font-size: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.4s;
+            padding: 10px;
+
+            span {
+                margin-right: 5px;
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+}
+
+.nav .elem:hover {
+    a {
+        transform: scale(1.1);
+    }
+
+    /* .light {
+        width: 80%;
+        background-color: black;
+        box-shadow: 0px 1px 1px;
+    }
+    .dark{
+        width: 80%;
+        background-color: white;
+        box-shadow: 0px 1px 1px white;
+    } */
+    .bar {
+        width: 80%;
+    }
+}
+
+.m-butn {
+    display: none;
+}
+
+.m-theme {
+    display: none;
+}
+
+.m-nav-box {
+    display: none;
+}
+
+.m-nav {
+    display: none;
+}
+
+/* About section styling */
+.about {
+    .dark {
+        color: white;
+
+        a {
+            color: wheat;
+        }
+    }
+
+    margin: 50px 0px 50px 0px;
+
+    h1 {
+        text-align: center;
+    }
+
+    font-size:28px;
+    width:fit-content;
+    justify-self:center;
+    padding:5px;
+}
+
+/* Weather-Report styling */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wr {
+    margin: 50px 0px 50px 0px;
+
+    .r {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+            /* border-color: white; */
+            position: relative;
+            top: 4px;
+            left: 20px;
+            width: fit-content;
+            border-style: solid;
+            border-radius: 10px 0px 10px 0px;
+            margin: 0px;
+            padding: 5px;
+
+            span {
+                position: relative;
+                top: 4px;
+                margin: 0px 4px 0px 4px;
+
+            }
+        }
+
+        .light {
+            border-color: black;
+        }
+
+        .dark {
+            border-color: white;
+        }
+
+        #body {
+            overflow: hidden;
+
+            .cont {
+                width: fit-content;
+                padding: 10px;
+            }
+
+            font-weight: 1000;
+            /* background:url("https://cdn.leonardo.ai/users/049d32b6-1b7e-40a7-88bf-26f46c5f0742/generations/1f0e1807-89c0-6640-832f-ee207a6738e3/lucid-origin_create_a_beautiful_sun_in_clear_sky_few_clouds_on_either_side_of_the_sun_anime_s-0.jpg"); */
+            /* background:url('https://cdn.leonardo.ai/users/049d32b6-1b7e-40a7-88bf-26f46c5f0742/generations/1f0e0d2f-1173-67b0-a537-eb2b72eacd07/lucid-origin_create_a_beautiful_crescent_moon_in_clear_night_sky_with_stars_few_clouds_on_eit-0.jpg'); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .d {
+                position: absolute;
+                right: 0px;
+                border-radius: 10px 0px 10px 0px;
+                border-width: 0px 2px 2px 2px;
+                border-style: solid;
+
+                p {
+                    margin: 0px;
+                    padding: 2px;
+                    background-color: orange;
+                }
+            }
+
+            position: relative;
+            z-index: 1;
+            border-style:solid;
+            border-radius: 0px 15px 0px 15px;
+
+            p {
+                font-size: 28px;
+
+                span {
+                    font-size: 28px;
+                    position: relative;
+                    top: 4px;
+                    margin: 0px 4px 0px 4px;
+                }
+            }
+        }
+    }
+
+    #l {
+        height: 100px;
+        font-size: 22px;
+        text-align: center;
+
+        span {
+            animation-name: rotate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            font-size: 28px;
+        }
+
+        p {
+            margin: 0px;
+        }
+    }
+}
+
+/* Footer Styling */
+footer .light {
+    background-color: rgb(43, 44, 80);
+    color: white;
+}
+
+footer .dark {
+    background-color: bisque;
+    color: black;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #link {
+        display: flex;
+        gap: 100px;
+        margin-bottom: 40px;
+
+        .light {
+            border-color: white;
+            color: black;
+            background-color: bisque;
+            border-color: white;
+        }
+
+        .dark {
+            color: black;
+            background-color: rgb(175, 199, 255);
+        }
+
+        a {
+            font-weight: 1000;
+            transition: background-color 0.4s;
+            width: fit-content;
+            font-size: 24px;
+            color: inherit;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 5px;
+            border-style: solid;
+
+            span {
+                font-size: 28px;
+                position: relative;
+                top: 4px;
+                right: 4px;
+            }
+        }
+    }
+}
+
+#footer #link .light:hover {
+    background-color: rgb(53, 55, 87);
+    color: white;
+}
+
+#footer #link .dark:hover {
+    background-color: rgb(252, 255, 214);
+    color: black;
+}
+
+/* Media Queries */
+@media screen and (max-width:900px) {
+    .about {
+        h1 {
+            text-align: left;
+        }
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        .m-theme .dark {
+            color: white;
+            background-color: transparent;
+        }
+
+        .m-theme .light {
+            color: black;
+            background-color: transparent;
+        }
+    }
+
+    .m-butn {
+        position: relative;
+        display: block;
+        z-index: 6;
+        background-color: rgba(172, 172, 235, 0.8);
+        border-radius: 10px;
+        padding: 4px;
+        width: fit-content;
+
+        div {
+            background-color: orange;
+            width: 45px;
+            margin: 5px;
+            height: 5px;
+            border-radius: 15px;
+            background-color: black;
+        }
+    }
+
+    .m-theme:hover {
+        cursor: pointer;
+    }
+
+    .m-theme {
+        display: block;
+        justify-self: center;
+        position: absolute;
+        top: 5px;
+
+        p {
+            border-style: solid;
+            padding: 4px;
+            text-align: center;
+            font-size: 20px;
+            color: inherit;
+            text-decoration: none;
+            margin: 0px;
+
+            span {
+                margin-right: 5px;
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+
+    .m-nav-box {
+        position: absolute;
+        top: 0px;
+        z-index: 5;
+        height: 100%;
+        width: 0px;
+    }
+
+    .m-nav {
+        position: relative;
+        top: 50px;
+        display: block;
+
+        .elem {
+            overflow-x: hidden;
+            height: 50px;
+            transition: background-color 0.6s, color 0.66s;
+
+            a {
+                display: block;
+                /* background-color: beige; */
+                text-align: center;
+                font-size: 20px;
+                color: inherit;
+                padding: 10px;
+                text-decoration: none;
+
+                span {
+                    margin-right: 5px;
+                    position: relative;
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    .m-nav .light:hover {
+        background-color: bisque;
+        color: black;
+        font-size: 40px;
+    }
+
+    .m-nav .dark:hover {
+        background: black;
+        font-size: 40px;
+        color: white;
+    }
+
+    .wr {
+        .r {
+            width: 100%;
+
+            h1 {
+                font-size: 24px;
+            }
+
+            #body {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        #l {
+            font-size: 18px;
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+    #footer #link {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #footer h1 {
+        font-size: 26px;
+    }
+
+    #footer #link a {
+        font-size: 20px;
+    }
+}
