@@ -15,5 +15,6 @@ The Project Displays user's location's weather information by asking for its loc
 <h4>API's used</h4>
 <p><a href="https://geoapi.info/">geoapi</a></p>
 <p><a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a></p>
+<h2>If you liked this repository please give it a star ★ </h2>
 <h2>Preview Project - <a href="https://weather-report-info.netlify.app/">On Netlify</a> </h2>
 
