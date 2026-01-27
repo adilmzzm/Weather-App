@@ -10,6 +10,9 @@ The Project Displays user's location's weather information by asking for its loc
 <p>JQUERY</p>
 <p>HTML</p>
 <p>CSS</p>
+<p>Webpack</p>
+<p>Babel</p>
+<p>Node.js</p>
 <p><a href="https://iconoir.com/">Iconoir</a> for icons</p>
 <p><a href="https://leonardo.ai/">Leondardo AI</a> for images used</p>
 <h4>API's used</h4>
